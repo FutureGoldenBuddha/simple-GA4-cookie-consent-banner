@@ -13,6 +13,7 @@ Also place the following code in the head file, also with the proper GA4 tag (G-
  
  Next lets setup the sonsent initialization trigger (as specified in https://support.google.com/tagmanager/answer/10718549?sjid=18022728896868407510-EU):
  - Go to https://tagmanager.google.com
+ - first you have to create an account within google tag manager (:-/)... follow the steps on including the code snippets on your site... ok
  - In the desired google tag, click Advanced Settings > Consent Settings.
  
  JS code references for gtag management:
