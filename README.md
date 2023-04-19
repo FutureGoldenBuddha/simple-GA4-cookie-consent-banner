@@ -11,4 +11,11 @@ Also place the following code in the head file, also with the proper GA4 tag (G-
   <script async src=".../path/to/gtag-init.js"></script>
  ```
  
- Next
+ Next lets setup the sonsent initialization trigger (as specified in https://support.google.com/tagmanager/answer/10718549?sjid=18022728896868407510-EU):
+ 
+ 
+ 
+ JS code references for gtag management:
+ https://developers.google.com/tag-platform/devguides/consent
+ 
+ 
