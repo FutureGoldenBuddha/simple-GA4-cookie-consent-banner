@@ -21,6 +21,7 @@ FIRST - ACCOUNT
 SECOND - TAG
 - create a new tag of custom HTML that has the configuration for the banner plus the code reference for the css and the js:
 - like this {...}
+- with the trigger - Consent Initialization - All pages
 
 THIRD - VARIABLE
 - Click Variables in the left navigation.
