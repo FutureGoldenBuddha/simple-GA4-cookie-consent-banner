@@ -11,12 +11,18 @@ Also place the following code in the head file, also with the proper GA4 tag (G-
   <script async src=".../path/to/gtag-init.js"></script>
  ```
  
-Next lets setup the sonsent initialization trigger (as specified in https://support.google.com/tagmanager/answer/10718549?sjid=18022728896868407510-EU):
+Next lets setup the consent initialization trigger (as specified in https://support.google.com/tagmanager/answer/10718549?sjid=18022728896868407510-EU):
  - Go to https://tagmanager.google.com
+
+FIRST - ACCOUNT
  - first you have to create an account within google tag manager (:-/)... follow the steps on including the code snippets on your site... ok
  - go to admin tab, click Container Settings, and leave the Enable Consent Overview checkbox selected.
-To access the Consent Overview page:
-FIRST
+
+SECOND - TAG
+- create a new tag of custom HTML that has the configuration for the banner plus the code reference for the css and the js:
+- like this {...}
+
+THIRD - VARIABLE
 - Click Variables in the left navigation.
 - Create variable of type "first-party cookie" with the name "cookie - hasConsent" for the variable and "hasConsent" for the name of the cookie.
 (main variable for identifying and keeping track of cookie settings)
