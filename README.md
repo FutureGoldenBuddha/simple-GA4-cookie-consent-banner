@@ -5,10 +5,10 @@ Based on https://github.com/Alex-D/Cookies-EU-banner and https://github.com/do-y
 
 We will need gtag-init.js file available above, with the proper GA4 tag (G-YOUR_ID).
 
-Also place the following code in the head file.
+Also place the following code in the head file, also with the proper GA4 tag (G-YOUR_ID).
 ```
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_ID"></script>
   <script async src=".../path/to/gtag-init.js"></script>
  ```
  
- 
+ Next
