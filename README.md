@@ -11,10 +11,14 @@ Also place the following code in the head file, also with the proper GA4 tag (G-
   <script async src=".../path/to/gtag-init.js"></script>
  ```
  
- Next lets setup the sonsent initialization trigger (as specified in https://support.google.com/tagmanager/answer/10718549?sjid=18022728896868407510-EU):
+Next lets setup the sonsent initialization trigger (as specified in https://support.google.com/tagmanager/answer/10718549?sjid=18022728896868407510-EU):
  - Go to https://tagmanager.google.com
  - first you have to create an account within google tag manager (:-/)... follow the steps on including the code snippets on your site... ok
  - go to admin tab, click Container Settings, and leave the Enable Consent Overview checkbox selected.
+To access the Consent Overview page:
+- Click Tags in the left navigation.
+- Click the Consent Overview icon.
+
  
  JS code references for gtag management:
  https://developers.google.com/tag-platform/devguides/consent
