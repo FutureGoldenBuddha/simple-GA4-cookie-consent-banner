@@ -7,8 +7,8 @@ We will need gtag-init.js file available above, with the proper GA4 tag (G-YOUR_
 
 Also place the following code in the head file.
 ```
-  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_ID"></script>
-  <script defer src=".../path/to/gtag-init.js"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_ID"></script>
+  <script async src=".../path/to/gtag-init.js"></script>
  ```
  
  
