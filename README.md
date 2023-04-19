@@ -17,6 +17,7 @@ Next lets setup the sonsent initialization trigger (as specified in https://supp
  - go to admin tab, click Container Settings, and leave the Enable Consent Overview checkbox selected.
 To access the Consent Overview page:
 - Click Tags in the left navigation.
+- Create variable with the name "hasConsent" (main variable for identifying and keeping track of cookie settings)
 - Click the Consent Overview icon.
 
  
