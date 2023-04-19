@@ -16,8 +16,12 @@ Next lets setup the sonsent initialization trigger (as specified in https://supp
  - first you have to create an account within google tag manager (:-/)... follow the steps on including the code snippets on your site... ok
  - go to admin tab, click Container Settings, and leave the Enable Consent Overview checkbox selected.
 To access the Consent Overview page:
-- Click Tags in the left navigation.
-- Create variable with the name "hasConsent" (main variable for identifying and keeping track of cookie settings)
+FIRST
+- Click Variables in the left navigation.
+- Create variable of type "first-party cookie" with the name "cookie - hasConsent" for the variable and "hasConsent" for the name of the cookie.
+(main variable for identifying and keeping track of cookie settings)
+
+
 - Click the Consent Overview icon.
 
  
