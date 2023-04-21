@@ -6,36 +6,24 @@ Forked from https://github.com/orestbida/cookieconsent, thank you for this wonde
 
 So let's see how I managed to have it working without google tag manager (Yes, this banner is that cool!!!).
 
-We will need gtag-init.js file available above, with the proper GA4 tag (G-YOUR_ID).
-
-Also place the following code in the head file, also with the proper GA4 tag (G-YOUR_ID).
+First things first: include Adsense and Analytics tags in the head section of your website:
+NOTE 1: don't forget to include the respective cookiecategory in the script tags in order for the banner to keep track on the cookie settings after each update from the user.
 ```
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_ID"></script>
-  <script async src=".../path/to/gtag-init.js"></script>
- ```
+<head>
+	<!-- adsense -->
+	<script type="text/plain" data-cookiecategory="targeting" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-CODE"
+     crossorigin="anonymous"></script>
+	<!-- Google tag (gtag.js) -->
+	<script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_ID"></script>
+	<script type="text/plain" data-cookiecategory="analytics">
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-YOUR-ID');
+	</script>
+...
+</head>
+```
  
-Next lets setup the consent initialization trigger (as specified in https://support.google.com/tagmanager/answer/10718549?sjid=18022728896868407510-EU):
- - Go to https://tagmanager.google.com
-
-FIRST - ACCOUNT
- - first you have to create an account within google tag manager (:-/)... follow the steps on including the code snippets on your site... ok
- - go to admin tab, click Container Settings, and leave the Enable Consent Overview checkbox selected.
-
-SECOND - TAG
-- create a new tag of custom HTML that has the configuration for the banner plus the code reference for the css and the js:
-- like this {...}
-- with the trigger - Consent Initialization - All pages
-
-THIRD - VARIABLE
-- Click Variables in the left navigation.
-- Create variable of type "first-party cookie" with the name "cookie - hasConsent" for the variable and "hasConsent" for the name of the cookie.
-(main variable for identifying and keeping track of cookie settings)
-
-
-- Click the Consent Overview icon.
-
- 
- JS code references for gtag management:
- https://developers.google.com/tag-platform/devguides/consent
- 
+Next let's setup the cookie banner copying the source files (css + js) and init file to a folder of your preference and create the appropriate links to them in your site:
  
