@@ -1,6 +1,6 @@
 # simple-GA4-cookie-consent-banner
 See an example at my website https://www.my-inhaler.com.
-This is for whom needs to transition from universal analytics (which is supposed to stop working by july 2023) to google analytics 4, and to use also google adsense.
+This is for whom needs to transition from universal analytics (which is supposed to stop working by july 2023) to google analytics 4, and to use also google adsense (so we have an example of an analytics cookie and a marketing cookie, and you can add how many you need).
 
 Forked from https://github.com/orestbida/cookieconsent, thank you for this wonderful tool. Just changed text-align:left into text-align:justify in the preferences window because my intro text is a bit bigger, plus instructions on how I managed to have it working without google tag manager (Yes, this banner is that cool!!!).
 
