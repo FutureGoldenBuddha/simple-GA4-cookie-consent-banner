@@ -6,7 +6,7 @@ Forked from https://github.com/orestbida/cookieconsent, thank you for this wonde
 
 So let's see how I managed to have it working without google tag manager (Yes, this banner is that cool!!!).
 
-First things first: include Adsense and Analytics tags in the head section of your website:
+First things first: include Adsense and Analytics tags in the head section of your website index file (and other landing pages too):
 NOTE 1: don't forget to include the respective cookiecategory in the script tags in order for the banner to keep track on the cookie settings after each update from the user.
 ```
 <head>
