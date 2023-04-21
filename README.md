@@ -40,4 +40,4 @@ and right at the end of the body tag
 	<script defer src="path-to/cookies-banner/cookieconsent-init.js"></script>
 </body>
 ```
-Now go ahead and explore the cookies that your site shows and change the init file accordingly. Don't forget to change the domain name to the domain of your site, and you can see an example of a cookie policy and privacy policy at my website https://wwww.my-inhaler.com.
+Now go ahead and explore the cookies that your site shows and change the init file accordingly. Don't forget to change the domain name to the domain of your site, and you can see an example of a cookie policy and privacy policy at my website https://www.my-inhaler.com.
