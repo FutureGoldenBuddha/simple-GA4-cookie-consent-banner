@@ -11,8 +11,7 @@ NOTE 1: don't forget to include the respective cookiecategory in the script tags
 ```
 <head>
 	<!-- adsense -->
-	<script type="text/plain" data-cookiecategory="targeting" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-CODE"
-     crossorigin="anonymous"></script>
+	<script type="text/plain" data-cookiecategory="targeting" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-CODE"  crossorigin="anonymous"></script>
 	<!-- Google tag (gtag.js) -->
 	<script type="text/plain" data-cookiecategory="analytics" async src="https://www.googletagmanager.com/gtag/js?id=G-YOUR_ID"></script>
 	<script type="text/plain" data-cookiecategory="analytics">
@@ -25,5 +24,21 @@ NOTE 1: don't forget to include the respective cookiecategory in the script tags
 </head>
 ```
  
-Next let's setup the cookie banner copying the source files (css + js) and init file to a folder of your preference and create the appropriate links to them in your site:
+Next let's setup the cookie banner copying the source files (css + js) and init file to a folder of your preference and create the appropriate links to them in your site index file's head section:
+```
+<head>
+	...
+	<link rel="stylesheet" href="path-to/cookies-banner/cookieconsent.css" media="print" onload="this.media='all'">
+</head>
+```
+and right at the end of the body tag
+```
+<body>
+	...
+
+	<script defer src="path-to/cookies-banner/cookieconsent.js"></script>
+	<script defer src="path-to/cookies-banner/cookieconsent-init.js"></script>
+</body>
+```
+
  
