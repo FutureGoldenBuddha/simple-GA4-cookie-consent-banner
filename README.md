@@ -24,7 +24,7 @@ NOTE: don't forget to include the respective cookiecategory in the script tags i
 </head>
 ```
  
-Next let's setup the cookie banner copying the source files (css + js) and init file to a folder of your preference and create the appropriate links to them in your site index file's head section:
+Next let's setup the cookie banner copying the source files (cookieconsent.css + cookieconsent.js) and also the init file to a folder of your preference and create the appropriate links to them in your site index file's head section:
 ```
 <head>
 	...
@@ -40,5 +40,4 @@ and right at the end of the body tag
 	<script defer src="path-to/cookies-banner/cookieconsent-init.js"></script>
 </body>
 ```
-
- 
+Now go ahead and explore the cookies that your site shows and change the init file accordingly. Don't forget to change the domain name to the domain of your site, and you can see an example of a cookie policy and privacy policy at my website https://wwww.my-inhaler.com.
